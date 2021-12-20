@@ -1,4 +1,4 @@
-package org.xyz.concurrent.concurrent.diskcrawler;
+package org.xyz.concurrent.concurrent.blockingqueue;
 
 import java.io.File;
 import java.io.FileFilter;
