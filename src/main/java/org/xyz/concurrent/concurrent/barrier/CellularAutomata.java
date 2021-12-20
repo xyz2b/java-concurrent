@@ -35,7 +35,7 @@ public class CellularAutomata {
             while (!board.hasConverged()) {
                 for (int x = 0; x < board.getMaxX(); x++) {
                     for (int y = 0; y < board.getMaxY(); y++) {
-                        board.setNewValue(x, y, );
+                        board.setNewValue(x, y, computeValue(x, y));
                     }
                 }
 
@@ -50,6 +50,10 @@ public class CellularAutomata {
                 }
             }
         }
+    }
+
+    public int computeValue(int x, int y) {
+        return x + y;
     }
 
     public void start() {
